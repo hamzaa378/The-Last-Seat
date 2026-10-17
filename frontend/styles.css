@@ -1,0 +1,31 @@
+/* Small CSS layer for the student-facing Streamlit portal. All controls are native Streamlit. */
+.stApp { background: linear-gradient(165deg, #f3f8f7 0%, #f9fafb 65%, #f1f5f9 100%); }
+.block-container { max-width: 1240px; padding-top: 1.8rem; }
+section[data-testid="stSidebar"] { background: #103039; }
+section[data-testid="stSidebar"] * { color: #eff9f6; }
+section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p { color: #dbeee9; }
+section[data-testid="stSidebar"] input { color: #122f35; }
+.hero { background: linear-gradient(112deg, #102f38, #145b57); color: white;
+  padding: 30px 35px; border-radius: 19px; margin: 0 0 25px;
+  box-shadow: 0 18px 32px rgba(16, 48, 57, .15); }
+.hero .eyebrow { text-transform: uppercase; font-size: 12px; font-weight: 800;
+  letter-spacing: .16em; color: #b1f4db; margin-bottom: 10px; }
+.hero h1 { color: white; margin: 0; font-size: clamp(28px, 3vw, 40px); letter-spacing: -.03em; }
+.hero p { color: #d3eae5; max-width: 720px; margin: 9px 0 0; }
+.section-head { font-weight: 750; font-size: 20px; color: #142c33; margin: 20px 0 12px; }
+.seat-map { display:grid; grid-template-columns:repeat(10,minmax(0,1fr)); gap:7px;
+  padding:18px; border:1px solid #d9e8e3; border-radius:12px; background:#fff; }
+.seat { text-align:center; padding:9px 2px; border-radius:7px; font-size:12px;
+  font-weight:700; border:1px solid #d3e1dc; }
+.seat.open { background:#d8f4e7; color:#145e49; border-color:#b3dfca; }
+.seat.busy { background:#e5e7eb; color:#7c8590; border-color:#d7dbe0; }
+.seat-key { font-size:13px; color:#526774; padding:8px 0 12px; }
+.seat-key b { font-size:17px; vertical-align:middle; }
+.hint { background:#edf7f4; border-left:4px solid #189879; padding:12px 16px;
+  border-radius:8px; color:#154c41; font-size:14px; margin:10px 0; }
+small { color:#60757a; }
+@media (max-width: 650px) { .seat-map { gap:3px; padding:7px; }
+  .seat { font-size:10px; padding:6px 1px; } .hero { padding:22px; } }
+/* Seat buttons are native Streamlit widgets (including keyboard focus and disabled state). */
+[data-testid="stMainBlockContainer"] .stButton > button { min-height: 2.55rem; }
+[data-testid="stMainBlockContainer"] .stButton > button:disabled { opacity: .55; cursor: not-allowed; }

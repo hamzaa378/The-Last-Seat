@@ -1,0 +1,23 @@
+/* Cosmetic only. Never changes Swagger request semantics. */
+:root { --ink: #16212c; --accent: #137c69; --paper: #f5f8f8; }
+body { background: var(--paper); }
+.booking-guide { padding: 18px clamp(18px, 5vw, 74px); display: flex; align-items: center;
+  justify-content: space-between; flex-wrap: wrap; gap: 14px; background: #102b32;
+  color: #f8fafc; font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+  box-shadow: 0 4px 20px rgba(7,26,30,.14); }
+.booking-guide > div { display: flex; gap: 14px; align-items: baseline; flex-wrap: wrap; }
+.booking-guide strong { letter-spacing: .12em; font-size: 13px; }
+.booking-guide span { opacity: .84; font-size: 13px; }
+.booking-guide nav { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.booking-guide .steps { color: #ceeae4; }
+.booking-guide a { color: #9af1d6; font-weight: 700; text-decoration: none; font-size: 13px; }
+.booking-guide a:hover { text-decoration: underline; }
+.swagger-ui { font-family: system-ui, -apple-system, Segoe UI, sans-serif; }
+.swagger-ui .topbar { background: #173943; }
+.swagger-ui .info { margin: 28px 0 22px; }
+.swagger-ui .info .title { color: #102b32; }
+.swagger-ui .scheme-container { border-radius: 14px; box-shadow: 0 4px 14px rgba(16,43,50,.06); }
+.swagger-ui .opblock-tag { color: var(--ink); border-bottom: 1px solid #d9e5e4; }
+.swagger-ui .opblock { border-radius: 9px; overflow: hidden; }
+.swagger-ui .btn.authorize { border-color: var(--accent); color: var(--accent); }
+.swagger-ui .btn.authorize svg { fill: var(--accent); }

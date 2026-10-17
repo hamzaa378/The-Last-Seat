@@ -1,0 +1,36 @@
+# Local secrets and configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local Python environments and caches
+.venv/
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# OS and IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated test artifacts and local data
+loadtests/results_*.json
+loadtests/profile_*.json
+loadtests/k6_*_results.json
+*.log
+*.sqlite3
+*.db
+results/
+*.zip
